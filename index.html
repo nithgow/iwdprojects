@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Nithish Gowda</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#Contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero-section">
+        <div class="header-content">
+            <div class="profile-container">
+                <img src="m-beetle.jpg" alt="Profile Image">
+                <h2>Web Developer</h2>
+                <p>Passionate about creating awesome web experiences.</p>
+                <div class="buttons">
+                    <a href="#Contact"><button class="hire-btn">Hire Me</button></a>
+                    <button class="download-cv-btn">Download CV</button>
+                </div>
+                
+                <div class="social-icons">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-box" id="about">
+        <div class="box">
+            <div class="about-section">
+                <h3>About</h3>
+                <p>I completed B.Tech Hons degree in Compurt Science from RV University</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="basic-info-section">
+                <h3>Basic Information</h3>
+                <ul>
+                    <li><strong>Age:</strong> 18</li>
+                    <li><strong>Email:</strong> nit05@email.com</li>
+                    <li><strong>Phone:</strong> +919083683793</li>
+                    <li><strong>Address:</strong> 123 Street, City, Country</li>
+                    <li><strong>Languages:</strong> English, Kannada, Hindi, Telugu</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-box" id="skills">
+        <div class="box">
+            <div class="skills-section">
+                <h3>Professional Skills</h3>
+                    <div class="skills-pair">
+                        <div class="skill-bar">
+                            <div class="skill-name">HTML</div>
+                            <div class="bar html-bar"></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">CSS</div>
+                            <div class="bar css-bar"></div>
+                        </div>
+                    </div>
+                
+                <div class="skills-pair">
+                    <div class="skill-bar">
+                        <div class="skill-name">JAVASCRIPT</div>
+                        <div class="bar js-bar"></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">BOOTSTRAP</div>
+                        <div class="bar bt-bar"></div>
+                    </div>
+                </div>
+                <div class="skills-pair">
+                    <div class="skill-bar">
+                        <div class="skill-name">JAVA</div>
+                        <div class="bar java-bar"></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">PYTHON</div>
+                        <div class="bar py-bar"></div>
+                    </div>
+                </div>
+                <div class="skills-pair">
+                    <div class="skill-bar">
+                        <div class="skill-name">C++</div>
+                        <div class="bar cplus-bar"></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">C</div>
+                        <div class="bar c-bar"></div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-box" id="Portfolio">
+        <div class="box">
+            <h3>Portfolio</h3>
+            <ul>
+                <li>Esports Website</li>
+                <li>Tic-Tac-Toe</li>
+                <li>Selenium Automation</li>
+                <li>Turtle-Insider</li>
+                <li>Data-Scrapping</li>
+                <li>Web Automation</li>
+                <li>Password Generator</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="experience-box" id="experience">
+        <div class="box">
+            <h3>Experience</h3>
+            <ul>
+                <li>Web Developer - Company A</li>
+                <li>Python Programmer- Company B</li>
+                <li>Java Programmer- Company C</li>
+                <li>Data Analysis- Company D</li>
+                <li>Data Security - Company E</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="education-box">
+        <div class="box">
+            <h3>Education</h3>
+            <ul>
+                <li>Btech Hons - Rv University </li>
+                <li>Completed Pre University - Coorg Pre Univerity College</li>
+                <li>Completed Schooling - Coorg Public School</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-box" id="Contact">
+        <div class="box">
+            <h3>Contact Me</h3>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required pattern="[A-Za-z ]+">
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter the subject" required pattern="[A-Za-z ]+">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+                <button type="button" onclick="sendEmail()">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
